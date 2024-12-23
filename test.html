@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+          }
+      
+          /* Header Section */
+          .header {
+            position: sticky;
+            top: 0;
+            width: 1440px;
+            height: 84px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+          }
+      
+          /* Logo Section */
+          .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #008000; /* Green color for the logo */
+          }
+      
+          /* Navigation Menu */
+          .nav {
+            display: flex;
+            gap: 30px;
+          }
+      
+          .nav a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 16px;
+            transition: color 0.3s;
+          }
+      
+          .nav a:hover {
+            color: #008000; /* Change color to green on hover */
+          }
+      
+          /* Buttons Section */
+          .buttons {
+            display: flex;
+            gap: 15px;
+          }
+      
+          .buttons .sign-in {
+            background-color: transparent;
+            color: #000000;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none; /* Removed border */
+            cursor: pointer;
+            transition: color 0.3s;
+          }
+      
+          .buttons .sign-in:hover {
+            color: #008000; /* Change color to green on hover */
+          }
+      
+          .buttons .start-trial {
+            background-color: #008000;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+      
+          .buttons .start-trial:hover {
+            background-color: #005f00; /* Darker green */
+          }
+          /* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow: hidden; /* ป้องกัน scroll เกิน */
+  }
+  
+  section.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* เต็มหน้าจอ */
+    overflow: hidden;
+  }
+  
+  .hero .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* โปร่งใสเล็กน้อย */
+    display: flex;
+    justify-content: flex-start; /* จัดข้อความทางซ้าย */
+    align-items: center; /* จัดข้อความตรงกลางแนวตั้ง */
+    padding-left: 50px;
+  }
+  
+  .hero .text {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    color: #006400; /* สีเขียวเข้ม */
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  
+  .hero .cta-button {
+    padding: 15px 30px;
+    background-color: #006400; /* สีเขียวเข้ม */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #004d00; /* สีเขียวเข้มขึ้นเมื่อ hover */
+  }
+  
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Alivio</div>
+        <nav class="nav">
+          <a href="#">Why Alivio</a>
+          <a href="#">Solutions</a>
+          <a href="#">Community</a>
+          <a href="#">Pricing</a>
+        </nav>
+        <div class="buttons">
+          <button class="sign-in">Sign in</button>
+          <button class="start-trial">Start Trial</button>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="content">
+          <h1>Be aware, <br> Manage well.</h1>
+          <p>Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+          <button class="cta-button">Find Your Way</button>
+        </div>
+        <div class="image">
+          <img src="imgs/background-img.jpg alt="Relaxed woman">
+        </div>
+      </section>
+</body>
+</html>

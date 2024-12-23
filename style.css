@@ -1,518 +1,518 @@
-
+/* Body */
 body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    /* width: 1440px; */
-
-
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%; /* ให้แน่ใจว่ากว้างพอดีจอ */
+ 
 }
-
 p {
-    font-family: 'Lato', sans-serif; 
-    font-size: 1rem; 
-    color: #333; 
-    line-height: 1.6; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 1rem; 
+  color: #333; 
+  line-height: 1.6; 
 }
 h1 {
-    font-family: Georgia, serif; 
-    color: #333; 
-    margin-bottom: 20px; 
+  font-family: Georgia, serif; 
+  color: #333; 
+  margin-bottom: 20px; 
 }
 
-/* navbar */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px 15px 25px;
-    background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
-    z-index: 999;
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%; /* ความกว้างเต็มหน้าจอ */
+  height: 84px; /* ความสูงที่กำหนดไว้ */
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
-.logo{
-    font-size: 22px;
-    font-weight: bold;
-    color: #01996d;
-}
-.menu-navbar-section{
+
+
+
+  /* Logo Section */
+  .logo {
+    width: 79px;
+    height: 22px;
+    color:#01996D; 
+  }
+
+  /* Navigation Menu */
+  .nav {
     display: flex;
-    list-style: none;
+    width: 557px;
+    height: 23px;
     gap: 72px;
   }
-  
-.menu-navbar-section li a {
+
+  .nav a {
     text-decoration: none;
-    color: #000;
-    padding: 8px 16px; 
-  }
-  
-.menu-navbar-section li a:hover {
-    background-color: #b9eadc; 
-    color: #ffffff; 
-  }
-.register-section {
+    color: #000000;
+    width: 96px;
+    height: 23px;
     display: flex;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
   }
-  
-.active {
-    text-decoration: none;
-    color: #000;
-    margin-top: 8px;
-  }
-.active:hover {
-    color: #01996d;
-  }
-.active-btn {
-    text-decoration: none;
-    padding: 8px 16px;
-    background-color: #01996d;
-    color: #fff;
-    font-size: 1rem;
-    border-radius: 4px;
-  }
-.active-btn:hover {
-    background-color: #016f52;
+  .nav a:hover {
+    color: #008000; /* Change color to green on hover */
   }
 
-  /* background section */
-  .background {
-    position: relative;
-    width: 100vw;
-    height: 100vh; 
+  /* Buttons Section */
+  .buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
-    padding-left: 50px;
-    box-sizing: border-box;
+    gap: 35px;
+  }
+
+  .buttons .sign-in {
+    background-color: transparent;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none; /* Removed border */
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .buttons .sign-in:hover {
+    color: #008000; /* Change color to green on hover */
+  }
+
+  .buttons .start-trial {
+    background-color: #01996D;
+    color: #ffffff;
+    border: none;
+    padding: 13px 50px 13px 50px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .buttons .start-trial:hover {
+    background-color: #005f00; /* Darker green */
+  }
+
+/* background section */
+   .background {
+    /* position: relative; */
+    /* width: 100%; /* กว้างเต็มหน้าจอ */
+    /* height: 100vh; สูงเต็มหน้าจอ */ 
+    width: 1440px;
+    height: 895px; 
+    
 }
 
 .background-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 .background-slogan {
     color: white;
+    position: absolute;
+    top: 235px;
+    left: 60px;
+    font-family: Georgia, serif;
+
    
 }
 
 .background-slogan h1 {
     font-size: 65px;
     margin-bottom: 2px;
-    color: #01996d;
-    font-size: 3rem; 
-    line-height: 1.2; 
-    margin-bottom: 20px;
+    color: #01996d; 
+    margin:0;
     
     
 }
 
 .background-slogan p {
-    font-size: 1.1rem; 
-    line-height: 1.6; 
-    color: #555; 
-    margin-bottom: 30px;
+    font-size: 20px; 
+    line-height: 28px; 
+    color: #484848; 
+    font-family: 'Lato', sans-serif;
+    margin: 30px 0px 56px 0px;
+   
 
 }
 
-.slogan-btn {
-    margin-top: 20px;
-}
 
 .slogan-btn button {
     padding: 12px 30px;
     font-size: 20px;
+    line-height: 25px;
     background-color: #01996d;
     color: white;
-    border: none;
+    border: 1px;
     cursor: pointer;
-    width: 240px;
+    width: 227px;
     height: 65px;
+    border-radius: 4px;
 }
 
 .slogan-btn button:hover {
     background-color: #a0ddc6;
 }
+
+
+
 /* .alivio-inform top */
+.alivio-inform{
+  width: 1440px;
+  padding: 169px 60px 61px 60px;
+}
+.how-it-work{
+  margin-top: -50px;
+  color: #424242;
+  font-size: 24px;
+}
+/* Container for the section */
 .why-alivio {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-end; 
-    gap: 50px;
-    margin: 60px;
-
+  background-color: #ffffff; /* สีพื้นหลัง */
+  max-width: 1440px;
+  margin: 0;
+  
 }
 
-.why-alivio .left {
-    flex: 1;
-    text-align: left; 
+/* Section Title */
+.section-title {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-align: left;
 }
 
-.why-alivio .left p {
-    flex: 1;
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    text-align: left;
-    margin-top: 100px;
+/* Content Container */
+.content-container {
+  display: flex;
+  flex-wrap: wrap; /* รองรับหน้าจอเล็ก */
+  gap: 65px; /* ระยะห่างระหว่างซ้ายและขวา */
+  align-items: center; /* จัดเนื้อหาให้อยู่แนวเดียวกัน */
 }
 
-.why-alivio h1 {
-    font-size: 3rem;
-    color: #01996d;
-    margin: 0;
+/* Left Section */
+.left {
+  flex: 1; /* ใช้พื้นที่ที่เหลือ */
+  min-width: 300px;
 }
 
-.why-alivio p {
-    flex: 1;
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    text-align: left;
-    margin-top: 100px;
+.left h1 {
+  font-size: 50px;
+  color: #01996d;
+  line-height: 78px;
+  margin: 0;
 }
 
+/* Right Section */
+.right {
+  flex: 1;
+  line-height: 30px;
+  color: #424242;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+
+}
 /* inform block */
-/* .alivio-inform{
-    margin-top: 169px;  เผื่อถ้าอยากให้ด้านบนข้อขวามห่าง
-} */
 .inform-block{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 51px;
-    margin: 60px;
-    width: 1320px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 51px;
+  width: 1440px;
+  margin-top: 52px;
 
 }
 .personalize-block{
-    position: relative;
-    top: 0;
-    left: 0;
+  width: 390px;
+  height: 937px;
 }
 .write-understand-block{
-    position: relative;
-    margin-top: 165px;
-    top: 0;
-    left: 0;
+  margin-top: 230px;
+  width: 405px;
+  height: 854px;
 }
 .alivio-block{
-    position: relative;
-    margin-top: 30px;
-    top: 0;
-    left: 0;
+  margin-top: 30px;
+  width: 435px;
+  height: 856px;
 }
 .num-name {
-    display: inline-block; 
-    margin-bottom: 50px;
-    width: 400px;
-    
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block; 
+  margin-bottom: 50px;
+  width: 400px;
+  
 }
 .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 60px;
-    font-size: 150px;
-    color: rgba(1, 153, 109, 0.2); 
-    z-index: -1; 
-    font-family: Georgia;
-  }
+  font-size: 150px;
+  color: rgba(1, 153, 109, 0.2); 
+  font-family: Georgia;
+}
 .name-block{ 
-    position: absolute;
-    top: 105px;
-    left: 90px;
-    font-size: 20px;
-    color: #000; 
-    z-index: 0;  
-    
-  }
-  .descript-inform p{
-    margin:150px 52px 60px 0px;
-  }
-  .inform-img img{
-    width: 390px;
-    height: 492px;
-    border-radius: 12px;
-  }
-
+  position: absolute;
+  top: 110px;
+  left: 90px;
+  font-size: 30px;
+  color: #000; 
+  margin: 0;
+  width: 313px;
+  
+}
+.descript-inform1 p{
+  margin: 0px 0px 60px 0px;
+  width: 382px;
+  height: 150px;
+  font-size: 20px;
+}
+.descript-inform2 p{
+  margin: 0px 0px 37px 0px;
+  width: 392px;
+  height: 90px;
+  font-size: 20px;
+}
+.descript-inform3 p{
+  margin: 0px 0px 48px 0px;
+  width: 435px;
+  height: 90px;
+  font-size: 20px;
+}
+.inform-img{
+  width: 390px;
+  height: 492px;
+  border-radius: 12px;
+}
+.inform-img img{
+  width: 390px;
+  height: 492px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+/* video section */
 .video-part {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px;
-    position: relative;
-    background-color: #245852;
-    height: 100vh;
-    gap: 22px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #245852;
+  gap: 22px;
+  width: 1440px;
+  height: 922px;
+  padding: 0px 60px;
 
 }
 .video-detail {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .video-detail h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: #ffffff;
+  font-size: 50px;
+  color: #ffffff;
+  margin: 0;
+  width: 551px;
+  height: 158px;
 }
 
 .video-detail p {
-    font-size: 25px;
-    margin-bottom: 30px;
-    color: #ffffff;
+  font-size: 25px;
+  color: #ffffff;
+  margin: 33px 0px 57px 0px;
 }
 
 .clip-video {
-    position: relative;
-    width: 747px;
-    height: 430.59px;
+  position: relative;
+  width: 747px;
+  height: 430.59px;
 }
 
 .clip-video img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 16px;
+  width: 747px;
+  height: 430px;
+  object-fit: cover;
 }
 
 .play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 }
 
 .play img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
+.video-btn button {
+  font-size: 20px;
+  background-color: #01996d;
+  color: white;
+  border: 1px;
+  cursor: pointer;
+  width: 240px;
+  height: 65px;
+  border-radius: 4px;
+}
+/* find your way section*/
 .find-your {
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    position: relative;
-    gap: 97.31px;
-    margin: 120px 60px 156px 60px;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  position: relative;
+  gap: 97.31px;
+  margin: 120px 60px 156px 60px;
+  width: 1345px;
+  height: 648px;
 }
 
 /* ส่วนภาพ */
 .picture-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .back-block {
-    background-color: #E9F4F3; 
-    width: 638.69px;
-    height: 573.26px;
-    border-radius: 20px;
-    overflow: hidden; 
+  background-color: #E9F4F3; 
+  width: 638.69px;
+  height: 573.26px;
+  border-radius: 20px;
+  overflow: hidden; 
 }
 
 .back-block img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-.profile-bolck {
-    position: absolute;
-    bottom: -60px; 
-    left: -40px; 
-    background: #FFFFFF;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px; 
-    text-align: center;
+
+
+/* Card Container */
+.customized-card {
+  width: 296px;
+  height: 293px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: absolute;
+  left: -25px;
+  top: 354px;
 }
 
-.profile-bolck h5 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #888888;
-    text-transform: uppercase; 
+/* Title Section */
+.title {
+  font-size: 16px;
+  color: #666666; /* สีเทา */
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block; /* ใช้เพื่อให้ข้อความและเส้นสัมพันธ์กัน */
 }
 
-.pic-profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center; 
-    margin-bottom: 15px;
+.title::after {
+  content: '';
+  display: block;
+  width: 100%; /* เส้นยาวเท่ากับข้อความ */
+  height: 1px;
+  background-color: #666666; /* สีของเส้น */
+  margin: 5px auto 15px auto;
 }
 
-.pic-profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pic-profile p {
-    font-size: 1rem;
-    margin: 0;
-    font-weight: bold;
-    color: #2F4A42;
+.profile-image {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+  object-fit: cover; /* ปรับให้รูปภาพไม่ผิดสัดส่วน */
+  margin-bottom: 10px;
 }
 
-.find-you-descript .right h1{
-    color: #01996d;
-    font-size: 50px;
-    width: 584px;
-}
-.find-you-descript .right p{
-    font-size: 20px;
-    margin: 20px 0px 40px 0px;
+.name {
+  font-size: 11px;
+  color: #000; /* สีเข้ม */
+  margin: 0;
 }
 
- .footer {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    padding: 50px;
-    background-color: #245852; 
-    color: white;
-    margin-top: 50px;
-    gap: 59.85px;
+/* Content Section */
+.content-section {
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  margin-top: 20px; /* ระยะห่างจากส่วนด้านบน */
+}
+
+.content-section h3 {
+  font-size: 15px;
+  font-weight: bold; /* ข้อความหัวข้อหนา */
+  color: #000000; /* สีข้อความหัวข้อ */
+  margin: 20px 0px 15px 0px;
+}
+
+.content-section ul {
+  list-style-type: disc; /* เพิ่มจุดหน้าข้อความ */
+  display: inline-block; /* จัดให้ลิสต์อยู่ตรงกลาง */
+  text-align: left; /* ข้อความในลิสต์ชิดซ้ายภายในกรอบ */
+  margin: 0;
+  
+}
+
+.content-section li {
+  font-size: 16px; /* ขนาดข้อความในลิสต์ */
+  color: #000000; /* สีข้อความในลิสต์ */
+  margin-bottom: 15px; /* ระยะห่างระหว่างรายการ */
+}
+/* footer section */
+.footer {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: 50px;
+  background-color: #245852; 
+  color: white;
+  margin-top: 50px;
+  gap: 59.85px;
 }
 
 .footer-logo h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 0 0 20px; 
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 20px; 
 }
 
 .footer-links {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 59.85px;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 59.85px;
 }
 
 .footer-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .footer-links li a:hover {
-    color: #9FD1C5; 
+  color: #9FD1C5; 
 }
-
-@media (max-width: 1024px) {
-    /* .navbar {
-        flex-direction: column; 
-        align-items: flex-start;
-    }
-
-    .menu-navbar-section {
-        flex-direction: column; 
-        gap: 10px; 
-    } */
-
-    .background {
-        height: 60dvw; 
-        width: 100dvw;
-    }
-
-    .background-slogan h1 {
-        font-size: 40px; 
-    }
-
-    .background-slogan p {
-        font-size: 1rem;
-    }
-
-    .slogan-btn button {
-        font-size: 1rem;
-        margin-left: 0;
-    }
-
-    .why-alivio {
-        flex-direction: column; 
-        gap: 20px; 
-    }
-
-    .inform-block {
-        grid-template-columns: 1fr; 
-        gap: 20px; 
-    }
-
-    .video-part {
-        flex-direction: column; 
-        gap: 30px; 
-    }
-
-    .clip-video {
-        width: 100%; 
-    }
-
-    .find-your {
-        flex-direction: column; 
-        gap: 30px; 
-    }
-
-    .back-block {
-        width: 100%; 
-        height: auto;
-    }
-
-    .footer {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px; 
-    }
-
-    .background-slogan h1 {
-        font-size: 30px; 
-    }
-
-    .background-slogan p {
-        font-size: 0.9rem; 
-    }
-
-    .slogan-btn button {
-        font-size: 0.9rem; 
-    }
-
-    .inform-block {
-        grid-template-columns: 1fr; 
-    }
-
-    .footer {
-        align-items: center; 
-        text-align: center; 
-    }
-
-    .footer-logo h1 {
-        font-size: 1.5rem; 
-    }
-
-    .footer-links {
-        gap: 5px; 
-    }
-}
-

@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Single-page</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- navbar section -->
-    <div class="navbar">
+    <!-- navbar-section -->
+    <header class="header">
         <div class="logo">
-            <img src="img/logo.png" alt="logo">
+            <img src="imgs/logo.png" alt="Logo image">
         </div>
-            <ul class="menu-navbar-section">
-                <li><a href="#Why-alivio">Why Alivio</a></li>
-                <li><a href="#Solutions">Solutions</a></li>
-                <li><a href="#Comunity">Community</a></li>
-                <li><a href="#Pricing">Pricing</a></li>
-            </ul>
-        <div class="register-section">
-                <a class="active" href="#sign-in">Sign in</a>
-                <a class="active-btn" href="#start-trial">Start Trial</a>
+        <nav class="nav">
+          <a href="#">Why Alivio</a>
+          <a href="#">Solutions</a>
+          <a href="#">Community</a>
+          <a href="#">Pricing</a>
+        </nav>
+        <div class="buttons">
+          <button class="sign-in">Sign in</button>
+          <button class="start-trial">Start Trial</button>
         </div>
-    </div>
-    <!-- background section -->
+      </header>
+      <!-- background section -->
     <div class="background">
         <div class="background-img">
-            <img src="img/background-img.jpg" alt="background">
+            <img src="imgs/background-img.jpg" alt="background">
         </div>
         <div class="background-slogan">
             <h1>Be aware, <br> manage well.</h1>
@@ -36,28 +35,34 @@
                 <button> Find Your Way</button>
             </div>
         </div>
-        
     </div>
     <!-- infrompart section -->
     <div class="alivio-inform">
-        <div class="why-alivio" id="Why-alivio">
-            <div class="left">
-                <p>How it works</p>
-                <h1>Understand & Release <br> the stress in 3 steps</h1>
+        <div class="why-alivio" id="why-alivio">
+            <div class="how-it-work">How it work</div>
+            <div class="content-container">
+                <div class="left">
+                    <h1>Understand & Release <br> the stress in 3 steps</h1>
+                </div>
+                <div class="right">
+                    Alivio offers as many journals it takes, tackling different areas such as 
+                    anxiety, overwhelmedness, sadness, or anger, and a variety of personal 
+                    causes, to help you become aware of your emotions, and guide you in how 
+                    to manage stress.
+                </div>
             </div>
-                <p>Alivio offers as many journals it takes, tackling different areas such as <br> anxiety, overwhelmedness, sadness, or anger, and a variety of personal<br> causes, to help you become aware of your emotions, and guide you in how <br>to manage stress. </p>
-        </div>
+          </div>          
         <div class="inform-block" id="Solutions">
             <div class="personalize-block">
                 <div class="num-name">
                     <div class="number"> 01</div>
                     <h1 class="name-block">Personalize</h1>
                 </div>
-                <div class="descript-inform">
+                <div class="descript-inform1">
                     <p>Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</p>
                 </div>
                 <div class="inform-img">
-                    <img src="img/presonalize-img.png" alt="personalize">
+                    <img src="imgs/presonalize-img.png" alt="personalize">
                 </div>
             </div>
             <div class="write-understand-block">
@@ -65,11 +70,11 @@
                     <div class="number"> 02</div>
                     <h1 class="name-block">Write & Understand</h1>
                 </div>
-                <div class="descript-inform">
+                <div class="descript-inform2">
                     <p>Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</p>
                 </div>
                 <div class="inform-img">
-                    <img src="img/write-understand-img.png" alt="write&understand">
+                    <img src="imgs/write-understand-img.png" alt="write&understand">
                 </div>  
             </div>
             <div class="alivio-block">
@@ -77,12 +82,12 @@
                     <div class="number"> 03</div>
                     <h1 class="name-block">Alivio!</h1>
                 </div>
-                <div class="descript-inform">
+                <div class="descript-inform3">
                     <p>Now you are aware, and have a way to manage and overcome your own stress.
                         What are you waiting for? Alivio today!</p>
                 </div>
                 <div class="inform-img">
-                    <img src="img/alivio-img.png" alt="alivio">
+                    <img src="imgs/alivio-img.png" alt="alivio">
                 </div>
             </div>
         </div>
@@ -92,38 +97,52 @@
         <div class="video-detail">
             <h1>Let's hear about Kayla's success story</h1>
             <p>See how well Alivio works in a real customer’s life. </p>
-            <div class="slogan-btn">
+            <div class="video-btn">
                 <button> Let's get started</button>
             </div>
         </div>
         <div class="clip-video">
-            <img src="img/video-section.png" alt="video">
+            <img src="imgs/video-section.png" alt="video">
             <div class="play">
-                <img src="img/play-button.png" alt="play-button">
+                <img src="imgs/play-button.png" alt="play-button">
             </div>
         </div>
-    
     </div>
-    <!-- find your way section -->
+     <!-- find your way section -->
     <div class="find-your" id="Pricing">
         <div class="picture-section">
             <div class="back-block">
-                <img src="img/your-way-person.png" alt="person">
+                <img src="imgs/your-way-person.png" alt="person">
             </div>
-            <div class="profile-bolck">
+            <!-- <div class="profile-bolck">
                 <h5>Customized For</h5>
                 <div class="pic-profile">
-                <img src="img/your-way-person.png" alt="profile-person">
+                <img src="imgs/your-way-person.png" alt="profile-person">
                     <p>Mikayla</p>
                 </div>
                 <div class="profile-descript">
                     <h4>Your custom contents</h4>
-                    <ul>
-                        <li> Understand Your Stress</li>
-                        <li> Anger Management</li>
-                    </ul>
+                        <div class="profile-list">
+                            <a >Understand Your Stress</a>
+                            <a >Anger Management</a>
+                        </div>
                 </div>
-            </div>
+            </div> -->
+            <div class="customized-card">
+                <p class="title">Customized For</p>
+                <div class="profile-section">
+                  <img src="imgs/your-way-person.png" alt="Profile Image" class="profile-image">
+                  <p class="name">Mikayla</p>
+                </div>
+                <div class="content-section">
+                <h3>Your custom contents</h3>
+                <ul>
+                  <li>Understand Your Stress</li>
+                  <li>Anger Management</li>
+                </ul>
+              </div>
+              </div>
+              
         </div>
         <div class="detail-find-you">
             <div class="find-you-descript" id="find you inform">
@@ -132,8 +151,11 @@
                     <h1>You tell us your stress,
                         We make your diary</h1>
                 </div>
-                    <p>Everyone experiences it, and in different ways.
-                        Let Alivio guide you, in a personalized journal experience, to overcome your stress. </p>
+                <div class="right-descript">
+                    <p> Everyone experiences it, and in different ways.<br>
+                        Let Alivio guide you, in a personalized journal experience, to overcome your stress.
+                    </p>
+                </div>
             </div>
             <div class="slogan-btn">
                 <button> Find Your Way</button>
@@ -143,7 +165,7 @@
     </div>
     <footer class="footer">
         <div class="footer-logo">
-            <img src="img/logo.png" alt="logo-footer">
+            <img src="imgs/logo-footer.png" alt="logo-footer">
         </div>
         <ul class="footer-links">
             <li><a href="#">Why Alivio</a></li>
@@ -152,6 +174,9 @@
             <li><a href="#">Pricing</a></li>
         </ul>
     </footer>
-    
+
+
+
+    </div>
 </body>
 </html>
