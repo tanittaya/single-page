@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- navbar-section -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="logo">
             <img src="imgs/logo.png" alt="Logo image">
         </div>
@@ -22,7 +22,38 @@
           <button class="sign-in">Sign in</button>
           <button class="start-trial">Start Trial</button>
         </div>
-      </header>
+    </header> -->
+    <header class="header">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Logo image">
+        </div>
+        <nav class="nav-menu">
+            <a href="#">Why Alivio</a>
+            <a href="#">Solutions</a>
+            <a href="#">Community</a>
+            <a href="#">Pricing</a>
+        </nav>
+        <div class="buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="start-trial">Start Trial</button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <nav>
+            <a href="#">Why Alivio</a>
+            <a href="#">Solutions</a>
+            <a href="#">Community</a>
+            <a href="#">Pricing</a>
+            <button class="sign-in">Sign in</button>
+            <button class="start-trial">Start Trial</button>
+        </nav>
+    </div>
       <!-- background section -->
     <div class="background">
         <div class="background-img">
@@ -51,38 +82,38 @@
                     to manage stress.
                 </div>
             </div>
-          </div>          
+        </div>          
         <div class="inform-block" id="Solutions">
-            <div class="personalize-block">
+            <div class="personalize-block ">
                 <div class="num-name">
                     <div class="number"> 01</div>
                     <h1 class="name-block">Personalize</h1>
                 </div>
-                <div class="descript-inform1">
+                <div class="descript-inform ">
                     <p>Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</p>
                 </div>
                 <div class="inform-img">
                     <img src="imgs/presonalize-img.png" alt="personalize">
                 </div>
             </div>
-            <div class="write-understand-block">
+            <div class="personalize-block top" >
                 <div class="num-name">
                     <div class="number"> 02</div>
-                    <h1 class="name-block">Write & Understand</h1>
+                    <h1 class="name-block ">Write & Understand</h1>
                 </div>
-                <div class="descript-inform2">
+                <div class="descript-inform bottom">
                     <p>Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</p>
                 </div>
                 <div class="inform-img">
                     <img src="imgs/write-understand-img.png" alt="write&understand">
                 </div>  
             </div>
-            <div class="alivio-block">
+            <div class="personalize-block top2">
                 <div class="num-name">
                     <div class="number"> 03</div>
-                    <h1 class="name-block">Alivio!</h1>
+                    <h1 class="name-block ">Alivio!</h1>
                 </div>
-                <div class="descript-inform3">
+                <div class="descript-inform bottom2">
                     <p>Now you are aware, and have a way to manage and overcome your own stress.
                         What are you waiting for? Alivio today!</p>
                 </div>
@@ -114,42 +145,28 @@
             <div class="back-block">
                 <img src="imgs/your-way-person.png" alt="person">
             </div>
-            <!-- <div class="profile-bolck">
-                <h5>Customized For</h5>
-                <div class="pic-profile">
-                <img src="imgs/your-way-person.png" alt="profile-person">
-                    <p>Mikayla</p>
-                </div>
-                <div class="profile-descript">
-                    <h4>Your custom contents</h4>
-                        <div class="profile-list">
-                            <a >Understand Your Stress</a>
-                            <a >Anger Management</a>
-                        </div>
-                </div>
-            </div> -->
-            <div class="customized-card">
-                <p class="title">Customized For</p>
+            <div class="customized-card ">
+                <p class="title line">Customized For</p>
                 <div class="profile-section">
                   <img src="imgs/your-way-person.png" alt="Profile Image" class="profile-image">
                   <p class="name">Mikayla</p>
                 </div>
                 <div class="content-section">
-                <h3>Your custom contents</h3>
-                <ul>
-                  <li>Understand Your Stress</li>
-                  <li>Anger Management</li>
-                </ul>
-              </div>
-              </div>
-              
+                    <h3>Your custom contents</h3>
+                    <ul>
+                        <li>Understand Your Stress</li>
+                        <li>Anger Management</li>
+                    </ul>
+                </div>
+            </div>     
         </div>
         <div class="detail-find-you">
             <div class="find-you-descript" id="find you inform">
                 <div class="right">
                     <p>Our Product</p>
                     <h1>You tell us your stress,
-                        We make your diary</h1>
+                        We make your diary
+                    </h1>
                 </div>
                 <div class="right-descript">
                     <p> Everyone experiences it, and in different ways.<br>
@@ -160,7 +177,6 @@
             <div class="slogan-btn">
                 <button> Find Your Way</button>
             </div>
-
         </div>
     </div>
     <footer class="footer">
@@ -174,9 +190,14 @@
             <li><a href="#">Pricing</a></li>
         </ul>
     </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
 
-
-
-    </div>
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show');
+        });
+    </script>
+    
 </body>
 </html>
